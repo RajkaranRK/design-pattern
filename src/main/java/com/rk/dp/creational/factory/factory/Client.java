@@ -9,7 +9,7 @@ public class Client {
         System.out.println(message.getMsg());
         
         
-        message = new JsonMessage("Greeting", "Good Morning");
+        message = new JsonMessageCreator().createMessage("Greeting", "Good Morning");
         System.out.println(message);
         System.out.println(message.encrypt());
         System.out.println(message.getMsg());
